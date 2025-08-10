@@ -30,6 +30,7 @@ jobs:
       - name: Build and Push Docker image
         uses: docker/build-push-action@v4
         with:
-          context: .
+          context: ./frontend
+          file: ./frontend/Dockerfile
           push: true
           tags: ${{ steps.login-ecr.outputs.registry }}/nihon-wakusei-frontend:latest
