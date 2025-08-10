@@ -33,4 +33,4 @@ jobs:
           context: ./frontend
           file: ./frontend/Dockerfile
           push: true
-          tags: ${{ steps.login-ecr.outputs.registry }}/nihon-wakusei-frontend:latest
+          tags: ${{ steps.login-ecr.outputs.registry }}/nihonwakusei/frontend:latest
