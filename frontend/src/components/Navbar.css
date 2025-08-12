@@ -1,4 +1,4 @@
-.navbar {
+nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,41 +10,47 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding-right: 50px;
 }
 
-.navbar ul {
+nav ul {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   /* margin: 20px 0 0 20px; */
 }
 
-.navbar li {
+nav li {
   list-style: none;
   color: #ffffff;
   position: relative; /* necessário para posicionar o ::after */
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
 }
 
-.navbar li::after {
+nav li::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -4px; /* ajusta a distância do underline em relação ao texto */
   height: 2px;
   width: 100%;
-  background-color: red;
+  background-color: #ff3b3b;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
 
-.navbar li:hover {
-  color: red;
+nav li:hover {
+  color: #ff3b3b;
   cursor: pointer;
 }
 
-.navbar li:hover::after {
+nav li:hover::after {
   cursor: pointer;
   transform: scaleX(1);
 }

@@ -1,0 +1,30 @@
+footer {
+  position: static; /* ou simplesmente remova qualquer position */
+  width: 100%;
+  min-height: 200px;
+  background: #940000;
+  color: white;
+  padding: 10px;
+  margin-top: 100px;
+  text-align: center;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-midias {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.social-midias-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}

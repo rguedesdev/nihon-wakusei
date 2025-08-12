@@ -4,6 +4,7 @@ import "./globals.css";
 
 // Components
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,8 @@ function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        {children}
+        <div className="site-content">{children}</div>
+        <Footer />
       </body>
     </html>
   );

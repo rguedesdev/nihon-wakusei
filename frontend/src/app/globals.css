@@ -1,9 +1,24 @@
-@import "tailwindcss";
+@import "tailwindcss"; /* pode ficar se você usa Tailwind, não faz mal */
 
-body {
+html,
+body,
+#__next {
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+/* Body como container flex vertical */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: #eee8e8;
   color: #171717;
-  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* Wrapper que cresce e empurra o footer */
+.site-content {
+  flex: 1 0 auto; /* grow, não encolhe além do necessário */
+  /* se tiver navbar fixa, você pode aplicar padding-top equivalente à altura dela */
 }

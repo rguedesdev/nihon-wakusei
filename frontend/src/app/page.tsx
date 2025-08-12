@@ -1,17 +1,17 @@
 import Image from "next/image";
 
-// Components
+// Style Sheet CSS
 import "./Home.css";
+
+// Components
+import { NewsCard } from "@/components/NewsCard";
+import { Pagination } from "@/components/Pagination";
 
 // Static Images
 import AkaneBanasho from "../../public/akanebanashi.jpg";
 
 // Icons
-import { CiCalendarDate } from "react-icons/ci";
-import { BsCalendar2Week } from "react-icons/bs";
 import { IoCalendarOutline } from "react-icons/io5";
-import { FiUser } from "react-icons/fi";
-import { BiPen } from "react-icons/bi";
 import { RxPencil2 } from "react-icons/rx";
 
 function Home() {
@@ -54,6 +54,8 @@ function Home() {
           </div>
         </div>
       </main>
+      <NewsCard />
+      <Pagination />
     </div>
   );
 }

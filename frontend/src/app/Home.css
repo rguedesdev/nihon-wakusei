@@ -1,4 +1,4 @@
-.main {
+main {
   background-color: #ffffff;
   margin-top: 100px;
   max-width: 1200px;
@@ -16,13 +16,12 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.main:hover {
+main:hover {
   transform: translateY(-5px); /* leve salto pra cima */
   box-shadow: 0 0 12px 3px #940000; /* sombra fluorescente verde */
 }
 
 .banner-image {
-  background-color: #940000;
   max-width: 500px;
   height: 268px;
   border-radius: 10px;
@@ -30,6 +29,7 @@
 
 .title-main {
   font-size: 2rem;
+  font-weight: bold;
   color: #171717;
   margin-left: 20px;
 }
@@ -62,5 +62,5 @@
   margin-top: 10px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
