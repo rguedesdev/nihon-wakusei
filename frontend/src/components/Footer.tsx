@@ -11,9 +11,9 @@ import { RiYoutubeLine } from "react-icons/ri";
 function Footer() {
   return (
     <footer>
-      <div className="social-midias">
+      <div className="social-media">
         <h2>Siga-nos nas Redes Socias</h2>
-        <div className="social-midias-icons">
+        <div className="social-media-icons">
           <IoLogoInstagram size={30} />
           <BsTwitterX size={28} />
           <LiaFacebookSquare size={38} />

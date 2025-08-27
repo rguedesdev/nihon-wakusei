@@ -15,13 +15,13 @@ footer {
   gap: 30px;
 }
 
-.social-midias {
+.social-media {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.social-midias-icons {
+.social-media-icons {
   display: flex;
   flex-direction: row;
   align-items: center;

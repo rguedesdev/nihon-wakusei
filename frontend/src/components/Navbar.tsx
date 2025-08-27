@@ -4,6 +4,9 @@ import Image from "next/image";
 // Style Sheet: CSS
 import "./Navbar.css";
 
+// Components
+import { ThemeToggle } from "./ThemeToggle";
+
 // Static Images
 import Logo from "../../public/logo.jpg";
 
@@ -68,6 +71,8 @@ function Navbar() {
           <span>Podcast</span>
         </li>
       </ul>
+
+      <ThemeToggle />
     </nav>
   );
 }

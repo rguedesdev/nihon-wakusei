@@ -10,7 +10,7 @@ section {
 }
 
 .news-card {
-  background-color: #ffffff;
+  background-color: var(--component-bg-color);
   max-width: 385px;
   height: 350px;
   margin-left: auto;
@@ -46,7 +46,7 @@ section {
 
 .card-title {
   font-size: 1.2rem;
-  color: #171717;
+  color: var(--text-color);
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -60,7 +60,7 @@ section {
 }
 
 .date-icon {
-  color: #171717;
+  color: var(--text-color);
   margin-left: 20px;
   margin-top: 10px;
   display: flex;

@@ -1,0 +1,61 @@
+.toggle-btn {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 9999px;
+  background-color: #cccccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+/* Bolinha */
+.icon-wrapper {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, background-color 0.3s;
+  z-index: 2;
+}
+
+/* Ícone dentro da bolinha */
+.icon {
+  width: 16px;
+  height: 16px;
+  transition: color 0.3s;
+}
+
+/* Background para Bolinha Preta Ativa */
+.toggle-btn.light {
+  background-color: #383838;
+}
+
+.toggle-btn.light .icon-wrapper {
+  transform: translateX(30px);
+  background-color: #000000; /* bolinha branca */
+}
+
+.toggle-btn.light .icon {
+  color: #ffffff; /* ícone preto */
+}
+
+/* Background para Bolinha Branca Ativa */
+.toggle-btn.dark {
+  background-color: #cccccc;
+}
+
+/* Bolinha Branca */
+.toggle-btn.dark .icon-wrapper {
+  transform: translateX(0);
+  background-color: #ffffff;
+}
+
+/* Cor do icone de Sol */
+.toggle-btn.dark .icon {
+  color: #000000;
+}

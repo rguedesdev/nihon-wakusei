@@ -1,5 +1,5 @@
 main {
-  background-color: #ffffff;
+  background-color: var(--component-bg-color);
   margin-top: 100px;
   max-width: 1200px;
   height: 300px;
@@ -30,13 +30,13 @@ main:hover {
 .title-main {
   font-size: 2rem;
   font-weight: bold;
-  color: #171717;
+  color: var(--text-color);
   margin-left: 20px;
 }
 
 .text-main {
   font-size: 1.2rem;
-  color: #171717;
+  color: var(--text-color);
   margin-left: 20px;
   flex-basis: 600px;
   flex-shrink: 1;

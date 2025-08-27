@@ -37,6 +37,190 @@ function NewsCard() {
           </span>
         </div>
       </div>
+
+      <div className="news-card">
+        <Image
+          className="card-image"
+          src={Kuroneko}
+          alt="Anime Banner"
+          width={500}
+          height={268}
+        />
+        <h2 className="card-title">
+          Kuroneko to Majo no Kyoushitsu terá Anime para 2026
+        </h2>
+        <div className="card-icons">
+          <span className="date-icon">
+            <IoCalendarOutline size={22} />
+            <p>10/08/2025</p>
+          </span>
+          <span className="date-icon">
+            <RxPencil2 size={22} />
+            <p>Reinaldo Guedes</p>
+          </span>
+        </div>
+      </div>
+
+      <div className="news-card">
+        <Image
+          className="card-image"
+          src={Kuroneko}
+          alt="Anime Banner"
+          width={500}
+          height={268}
+        />
+        <h2 className="card-title">
+          Kuroneko to Majo no Kyoushitsu terá Anime para 2026
+        </h2>
+        <div className="card-icons">
+          <span className="date-icon">
+            <IoCalendarOutline size={22} />
+            <p>10/08/2025</p>
+          </span>
+          <span className="date-icon">
+            <RxPencil2 size={22} />
+            <p>Reinaldo Guedes</p>
+          </span>
+        </div>
+      </div>
+
+      <div className="news-card">
+        <Image
+          className="card-image"
+          src={Kuroneko}
+          alt="Anime Banner"
+          width={500}
+          height={268}
+        />
+        <h2 className="card-title">
+          Kuroneko to Majo no Kyoushitsu terá Anime para 2026
+        </h2>
+        <div className="card-icons">
+          <span className="date-icon">
+            <IoCalendarOutline size={22} />
+            <p>10/08/2025</p>
+          </span>
+          <span className="date-icon">
+            <RxPencil2 size={22} />
+            <p>Reinaldo Guedes</p>
+          </span>
+        </div>
+      </div>
+
+      <div className="news-card">
+        <Image
+          className="card-image"
+          src={Kuroneko}
+          alt="Anime Banner"
+          width={500}
+          height={268}
+        />
+        <h2 className="card-title">
+          Kuroneko to Majo no Kyoushitsu terá Anime para 2026
+        </h2>
+        <div className="card-icons">
+          <span className="date-icon">
+            <IoCalendarOutline size={22} />
+            <p>10/08/2025</p>
+          </span>
+          <span className="date-icon">
+            <RxPencil2 size={22} />
+            <p>Reinaldo Guedes</p>
+          </span>
+        </div>
+      </div>
+
+      <div className="news-card">
+        <Image
+          className="card-image"
+          src={Kuroneko}
+          alt="Anime Banner"
+          width={500}
+          height={268}
+        />
+        <h2 className="card-title">
+          Kuroneko to Majo no Kyoushitsu terá Anime para 2026
+        </h2>
+        <div className="card-icons">
+          <span className="date-icon">
+            <IoCalendarOutline size={22} />
+            <p>10/08/2025</p>
+          </span>
+          <span className="date-icon">
+            <RxPencil2 size={22} />
+            <p>Reinaldo Guedes</p>
+          </span>
+        </div>
+      </div>
+
+      <div className="news-card">
+        <Image
+          className="card-image"
+          src={Kuroneko}
+          alt="Anime Banner"
+          width={500}
+          height={268}
+        />
+        <h2 className="card-title">
+          Kuroneko to Majo no Kyoushitsu terá Anime para 2026
+        </h2>
+        <div className="card-icons">
+          <span className="date-icon">
+            <IoCalendarOutline size={22} />
+            <p>10/08/2025</p>
+          </span>
+          <span className="date-icon">
+            <RxPencil2 size={22} />
+            <p>Reinaldo Guedes</p>
+          </span>
+        </div>
+      </div>
+
+      <div className="news-card">
+        <Image
+          className="card-image"
+          src={Kuroneko}
+          alt="Anime Banner"
+          width={500}
+          height={268}
+        />
+        <h2 className="card-title">
+          Kuroneko to Majo no Kyoushitsu terá Anime para 2026
+        </h2>
+        <div className="card-icons">
+          <span className="date-icon">
+            <IoCalendarOutline size={22} />
+            <p>10/08/2025</p>
+          </span>
+          <span className="date-icon">
+            <RxPencil2 size={22} />
+            <p>Reinaldo Guedes</p>
+          </span>
+        </div>
+      </div>
+
+      <div className="news-card">
+        <Image
+          className="card-image"
+          src={Kuroneko}
+          alt="Anime Banner"
+          width={500}
+          height={268}
+        />
+        <h2 className="card-title">
+          Kuroneko to Majo no Kyoushitsu terá Anime para 2026
+        </h2>
+        <div className="card-icons">
+          <span className="date-icon">
+            <IoCalendarOutline size={22} />
+            <p>10/08/2025</p>
+          </span>
+          <span className="date-icon">
+            <RxPencil2 size={22} />
+            <p>Reinaldo Guedes</p>
+          </span>
+        </div>
+      </div>
     </section>
   );
 }
