@@ -16,13 +16,19 @@ function NewsCard() {
   return (
     <section>
       <div className="news-card">
-        <Image
-          className="card-image"
-          src={Kuroneko}
-          alt="Anime Banner"
-          width={500}
-          height={268}
-        />
+        <div className="card-wrapper">
+          <Image
+            className="card-image"
+            src={Kuroneko}
+            alt="Anime Banner"
+            width={500}
+            height={268}
+          />
+          <div className="card-label">
+            <span>MANGA NEWS</span>
+          </div>
+        </div>
+
         <h2 className="card-title">
           Kuroneko to Majo no Kyoushitsu terá Anime para 2026
         </h2>
@@ -39,13 +45,18 @@ function NewsCard() {
       </div>
 
       <div className="news-card">
-        <Image
-          className="card-image"
-          src={Kuroneko}
-          alt="Anime Banner"
-          width={500}
-          height={268}
-        />
+        <div className="card-wrapper">
+          <Image
+            className="card-image"
+            src={Kuroneko}
+            alt="Anime Banner"
+            width={500}
+            height={268}
+          />
+          <div className="card-label">
+            <span>MANGA NEWS</span>
+          </div>
+        </div>
         <h2 className="card-title">
           Kuroneko to Majo no Kyoushitsu terá Anime para 2026
         </h2>
@@ -62,13 +73,18 @@ function NewsCard() {
       </div>
 
       <div className="news-card">
-        <Image
-          className="card-image"
-          src={Kuroneko}
-          alt="Anime Banner"
-          width={500}
-          height={268}
-        />
+        <div className="card-wrapper">
+          <Image
+            className="card-image"
+            src={Kuroneko}
+            alt="Anime Banner"
+            width={500}
+            height={268}
+          />
+          <div className="card-label">
+            <span>MANGA NEWS</span>
+          </div>
+        </div>
         <h2 className="card-title">
           Kuroneko to Majo no Kyoushitsu terá Anime para 2026
         </h2>
@@ -85,13 +101,19 @@ function NewsCard() {
       </div>
 
       <div className="news-card">
-        <Image
-          className="card-image"
-          src={Kuroneko}
-          alt="Anime Banner"
-          width={500}
-          height={268}
-        />
+        <div className="card-wrapper">
+          <Image
+            className="card-image"
+            src={Kuroneko}
+            alt="Anime Banner"
+            width={500}
+            height={268}
+          />
+          <div className="card-label">
+            <span>MANGA NEWS</span>
+          </div>
+        </div>
+
         <h2 className="card-title">
           Kuroneko to Majo no Kyoushitsu terá Anime para 2026
         </h2>
@@ -108,13 +130,18 @@ function NewsCard() {
       </div>
 
       <div className="news-card">
-        <Image
-          className="card-image"
-          src={Kuroneko}
-          alt="Anime Banner"
-          width={500}
-          height={268}
-        />
+        <div className="card-wrapper">
+          <Image
+            className="card-image"
+            src={Kuroneko}
+            alt="Anime Banner"
+            width={500}
+            height={268}
+          />
+          <div className="card-label">
+            <span>MANGA NEWS</span>
+          </div>
+        </div>
         <h2 className="card-title">
           Kuroneko to Majo no Kyoushitsu terá Anime para 2026
         </h2>
@@ -131,13 +158,18 @@ function NewsCard() {
       </div>
 
       <div className="news-card">
-        <Image
-          className="card-image"
-          src={Kuroneko}
-          alt="Anime Banner"
-          width={500}
-          height={268}
-        />
+        <div className="card-wrapper">
+          <Image
+            className="card-image"
+            src={Kuroneko}
+            alt="Anime Banner"
+            width={500}
+            height={268}
+          />
+          <div className="card-label">
+            <span>MANGA NEWS</span>
+          </div>
+        </div>
         <h2 className="card-title">
           Kuroneko to Majo no Kyoushitsu terá Anime para 2026
         </h2>
@@ -154,13 +186,18 @@ function NewsCard() {
       </div>
 
       <div className="news-card">
-        <Image
-          className="card-image"
-          src={Kuroneko}
-          alt="Anime Banner"
-          width={500}
-          height={268}
-        />
+        <div className="card-wrapper">
+          <Image
+            className="card-image"
+            src={Kuroneko}
+            alt="Anime Banner"
+            width={500}
+            height={268}
+          />
+          <div className="card-label">
+            <span>MANGA NEWS</span>
+          </div>
+        </div>
         <h2 className="card-title">
           Kuroneko to Majo no Kyoushitsu terá Anime para 2026
         </h2>
@@ -177,13 +214,18 @@ function NewsCard() {
       </div>
 
       <div className="news-card">
-        <Image
-          className="card-image"
-          src={Kuroneko}
-          alt="Anime Banner"
-          width={500}
-          height={268}
-        />
+        <div className="card-wrapper">
+          <Image
+            className="card-image"
+            src={Kuroneko}
+            alt="Anime Banner"
+            width={500}
+            height={268}
+          />
+          <div className="card-label">
+            <span>MANGA NEWS</span>
+          </div>
+        </div>
         <h2 className="card-title">
           Kuroneko to Majo no Kyoushitsu terá Anime para 2026
         </h2>
@@ -200,13 +242,18 @@ function NewsCard() {
       </div>
 
       <div className="news-card">
-        <Image
-          className="card-image"
-          src={Kuroneko}
-          alt="Anime Banner"
-          width={500}
-          height={268}
-        />
+        <div className="card-wrapper">
+          <Image
+            className="card-image"
+            src={Kuroneko}
+            alt="Anime Banner"
+            width={500}
+            height={268}
+          />
+          <div className="card-label">
+            <span>JAPÃO BIZARRO</span>
+          </div>
+        </div>
         <h2 className="card-title">
           Kuroneko to Majo no Kyoushitsu terá Anime para 2026
         </h2>

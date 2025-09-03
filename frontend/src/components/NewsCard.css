@@ -28,6 +28,11 @@ section {
   box-shadow: 0 0 12px 3px #940000; /* sombra fluorescente verde */
 }
 
+.card-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
 .card-image {
   width: 100%;
   height: 200px; /* altura fixa desejada */
@@ -42,6 +47,19 @@ section {
   height: 100%;
   object-fit: cover; /* ou contain, conforme preferir */
   display: block; /* remove gap inline default */
+}
+
+.card-label {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background-color: #940000;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 0 5px 5px 10px;
+  z-index: 10;
+  box-sizing: border-box; /* garante que o padding não quebre o tamanho */
 }
 
 .card-title {

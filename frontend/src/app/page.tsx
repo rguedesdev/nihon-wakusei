@@ -18,13 +18,19 @@ function Home() {
   return (
     <div>
       <main className="main">
-        <Image
-          className="banner-image"
-          src={AkaneBanasho}
-          alt="Anime Banner"
-          width={500}
-          height={268}
-        />
+        <div className="banner-wrapper">
+          <Image
+            className="banner-image"
+            src={AkaneBanasho}
+            alt="Anime Banner"
+            width={500}
+            height={268}
+          />
+          <div className="banner-label">
+            <span>ANIME NEWS</span>
+          </div>
+        </div>
+
         <div>
           <h1 className="title-main">
             Akane-banashi receberá adaptação em anime!
@@ -54,6 +60,7 @@ function Home() {
           </div>
         </div>
       </main>
+
       <NewsCard />
       <Pagination />
     </div>
