@@ -17,7 +17,7 @@ import { RxPencil2 } from "react-icons/rx";
 function Home() {
   return (
     <div>
-      <main className="main">
+      <main className="main-homepage">
         <div className="banner-wrapper">
           <Image
             className="banner-image"

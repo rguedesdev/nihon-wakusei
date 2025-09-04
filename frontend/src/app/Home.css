@@ -1,6 +1,6 @@
-main {
+.main-homepage {
   background-color: var(--component-bg-color);
-  margin-top: 100px;
+  margin-top: 30px;
   max-width: 1200px;
   height: 300px;
   margin-left: auto;
@@ -16,9 +16,9 @@ main {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-main:hover {
-  transform: translateY(-5px); /* leve salto pra cima */
-  box-shadow: 0 0 12px 3px #940000; /* sombra fluorescente verde */
+.main-homepage:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px 3px #940000;
 }
 
 .banner-wrapper {
@@ -37,12 +37,12 @@ main:hover {
   bottom: -5px;
   left: 0;
   background-color: #940000;
-  color: white;
+  color: #ffffff;
   font-size: 14px;
   padding: 5px 10px;
   border-radius: 0 5px 5px 10px;
   z-index: 10;
-  box-sizing: border-box; /* garante que o padding não quebre o tamanho */
+  box-sizing: border-box;
 }
 
 .title-main {
@@ -60,11 +60,11 @@ main:hover {
   flex-shrink: 1;
 
   display: -webkit-box;
-  -webkit-line-clamp: 4; /* número de linhas visíveis */
-  line-clamp: 4; /* número de linhas visíveis */
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis; /* "..." no fim */
+  text-overflow: ellipsis;
 }
 
 .icons-main {

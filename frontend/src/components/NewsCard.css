@@ -24,8 +24,8 @@ section {
 }
 
 .news-card:hover {
-  transform: translateY(-5px); /* leve salto pra cima */
-  box-shadow: 0 0 12px 3px #940000; /* sombra fluorescente verde */
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px 3px #940000;
 }
 
 .card-wrapper {
@@ -35,18 +35,17 @@ section {
 
 .card-image {
   width: 100%;
-  height: 200px; /* altura fixa desejada */
+  height: 200px;
   margin-bottom: 10px;
   border-radius: 10px;
-  overflow: hidden; /* corta qualquer coisa que “vaze” */
+  overflow: hidden;
 }
 
-/* Aplica no img dentro da div card-image */
 .card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* ou contain, conforme preferir */
-  display: block; /* remove gap inline default */
+  object-fit: cover;
+  display: block;
 }
 
 .card-label {
@@ -59,7 +58,7 @@ section {
   padding: 5px 10px;
   border-radius: 0 5px 5px 10px;
   z-index: 10;
-  box-sizing: border-box; /* garante que o padding não quebre o tamanho */
+  box-sizing: border-box;
 }
 
 .card-title {

@@ -1,0 +1,147 @@
+.main-animeid {
+  background-color: var(--component-bg-color);
+  margin-top: 30px;
+  max-width: 1200px;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.animeid-label {
+  background-color: #940000;
+  color: #ffffff;
+  min-width: 100px;
+  width: fit-content;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.animeid-post-meta {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.animeid-author-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.animeid-author-name {
+  position: relative; /* necessário pro tooltip */
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: #940000; /* cor da linha */
+  text-underline-offset: 6px; /* espaçamento do underline em relação ao texto */
+  text-decoration-thickness: 2px; /* espessura do underline */
+}
+
+.animeid-author-name:hover {
+  cursor: pointer;
+}
+
+/* ---------- TOOLTIP (com corte via clip-path) ---------- */
+/* Nota: use -webkit-clip-path para compatibilidade com alguns Safari */
+.animeid-author-name .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  width: 350px;
+  background-color: #940000;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #940000;
+
+  position: absolute;
+  z-index: 100;
+  top: calc(100% + 10px); /* posiciona logo abaixo do link */
+  left: 0; /* alinhado pelo início do nome do autor */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(-4px); /* pequeno deslocamento inicial */
+
+  font-size: 12px;
+
+  /* --- aqui está o recorte (notch) --- */
+  -webkit-clip-path: polygon(
+    0 0,
+    15px 0,
+    /* começo do recorte (x) */ 21px 8px,
+    /* ponto mais profundo do recorte (x, altura) */ 27px 0,
+    /* fim do recorte (x) */ 100% 0,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(0 0, 15px 0, 21px 4px, 27px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* exibe ao hover */
+.animeid-author-name:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.tooltip-follow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tooltip-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.animeid-author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.animeid-post-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.animeid-date-text {
+  font-size: 14px;
+}
+
+.animeid-post-content {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.animeid-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}

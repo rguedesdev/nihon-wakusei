@@ -9,6 +9,20 @@ body,
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Wrapper que cresce e empurra o footer */
+.site-content {
+  flex: 1 0 auto; /* grow, não encolhe além do necessário */
+  padding-top: 70px; /* se tiver navbar fixa, você pode aplicar padding-top equivalente à altura dela */
+}
+
 /* Tema Default - Claro */
 :root {
   --background-color: #eee8e8;
@@ -21,24 +35,4 @@ body,
   --background-color: #2c2c2c;
   --text-color: #ffffff;
   --component-bg-color: #171717;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-/* Body como container flex vertical
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #eee8e8;
-  color: #171717;
-} */
-
-/* Wrapper que cresce e empurra o footer */
-.site-content {
-  flex: 1 0 auto; /* grow, não encolhe além do necessário */
-  /* se tiver navbar fixa, você pode aplicar padding-top equivalente à altura dela */
 }
