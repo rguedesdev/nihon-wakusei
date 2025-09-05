@@ -1,0 +1,37 @@
+.comments-container {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+}
+
+.comment-title {
+  margin-bottom: 10px;
+}
+
+.comment-textarea {
+  width: 100%;
+  border: 2px solid #940000;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.comment-submit-button {
+  width: 250px;
+  height: 50px;
+  background-color: #940000;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.comment-submit-button:hover {
+  background-color: #a51313;
+  cursor: pointer;
+}
+
+.comment-submit-button:active {
+  zoom: 0.97;
+}

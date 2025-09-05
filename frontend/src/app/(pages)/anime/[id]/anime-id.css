@@ -5,7 +5,7 @@
   min-height: 300px;
   margin-left: auto;
   margin-right: auto;
-  padding: 15px;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -27,6 +27,12 @@
   margin-bottom: 15px;
 }
 
+.animeid-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
 .animeid-post-meta {
   display: flex;
   flex-direction: row;
@@ -38,6 +44,12 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.animeid-author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .animeid-author-name {
@@ -94,12 +106,29 @@
   clip-path: polygon(0 0, 15px 0, 21px 4px, 27px 0, 100% 0, 100% 100%, 0 100%);
 }
 
+.animeid-author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* exibe ao hover */
 .animeid-author-name:hover .tooltip {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
+}
+
+.hr-faded {
+  display: block;
+  border: none;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, #d41b1b, transparent);
+
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .tooltip-follow {
@@ -116,12 +145,6 @@
   gap: 5px;
 }
 
-.animeid-author-info {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .animeid-post-date {
   display: flex;
   flex-direction: row;
@@ -133,15 +156,27 @@
   font-size: 14px;
 }
 
+/* .animeid-post-content {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-top: 10px;
+} */
+
+.animeid-post-image {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
 .animeid-post-content {
   font-size: 1.2rem;
   color: var(--text-color);
   line-height: 1.6;
   margin-top: 10px;
-}
-
-.animeid-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
