@@ -1,5 +1,6 @@
 // Imports Principais
 import Image from "next/image";
+import Link from "next/link";
 
 // Style Sheet: CSS
 import "./Navbar.css";
@@ -37,38 +38,52 @@ function Navbar() {
       <Image className="" src={Logo} alt="Logo" width={70} height={70} />
       <ul>
         <li>
-          <RiHome3Line size={20} />
-          <span>Home</span>
+          <Link className="navigation-link" href={`/`}>
+            <RiHome3Line size={20} />
+            <span>Home</span>
+          </Link>
         </li>
 
         <li>
-          <FiTv size={20} />
-          <span>Anime</span>
+          <Link className="navigation-link" href={`/anime`}>
+            <FiTv size={20} />
+            <span>Anime</span>
+          </Link>
         </li>
 
         <li>
-          <TbBook size={20} />
-          <span>Mangá</span>
+          <Link className="navigation-link" href={`/manga`}>
+            <TbBook size={20} />
+            <span>Mangá</span>
+          </Link>
         </li>
 
         <li>
-          <MdOutlineLibraryMusic size={20} />
-          <span>J-Music</span>
+          <Link className="navigation-link" href={`/jmusic`}>
+            <MdOutlineLibraryMusic size={20} />
+            <span>J-Music</span>
+          </Link>
         </li>
 
         <li>
-          <IoGameControllerOutline size={20} />
-          <span>Game</span>
+          <Link className="navigation-link" href={`/game`}>
+            <IoGameControllerOutline size={20} />
+            <span>Game</span>
+          </Link>
         </li>
 
         <li>
-          <PiFilmSlate size={20} />
-          <span>Live Action</span>
+          <Link className="navigation-link" href={`/live-action`}>
+            <PiFilmSlate size={20} />
+            <span>Live Action</span>
+          </Link>
         </li>
 
         <li>
-          <MdPodcasts size={20} />
-          <span>Podcast</span>
+          <Link className="navigation-link" href={`/podcast`}>
+            <MdPodcasts size={20} />
+            <span>Podcast</span>
+          </Link>
         </li>
       </ul>
 

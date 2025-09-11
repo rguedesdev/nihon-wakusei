@@ -8,16 +8,17 @@ import { NewsCard } from "@/components/NewsCard";
 import { Pagination } from "@/components/Pagination";
 
 // Static Images
-import AkaneBanasho from "../../public/akanebanashi.jpg";
+import AkaneBanashi from "../../public/akanebanashi.jpg";
 
 // Icons
 import { IoCalendarOutline } from "react-icons/io5";
 import { RxPencil2 } from "react-icons/rx";
+import { MdOutlinePersonOutline } from "react-icons/md";
 
 function Home() {
   return (
     <div>
-      <main className="main-homepage">
+      {/* <main className="main-homepage">
         <div className="banner-wrapper">
           <Image
             className="banner-image"
@@ -50,18 +51,21 @@ function Home() {
           </p>
           <div className="icons-main">
             <span className="date-icon">
-              <IoCalendarOutline size={22} />
+              <IoCalendarOutline size={20} />
               <p>10 de Agosto de 2025</p>
             </span>
             <span className="date-icon">
-              <RxPencil2 size={22} />
+              <MdOutlinePersonOutline size={22} />
               <p>Reinaldo Guedes</p>
             </span>
           </div>
         </div>
+      </main> */}
+
+      <main>
+        <NewsCard />
       </main>
 
-      <NewsCard />
       <Pagination />
     </div>
   );

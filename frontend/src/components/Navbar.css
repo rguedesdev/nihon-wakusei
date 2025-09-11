@@ -21,7 +21,7 @@ nav ul {
   /* margin: 20px 0 0 20px; */
 }
 
-nav li {
+.navigation-link {
   list-style: none;
   color: #ffffff;
   position: relative; /* necessário para posicionar o ::after */
@@ -32,7 +32,7 @@ nav li {
   gap: 5px;
 }
 
-nav li::after {
+.navigation-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -45,12 +45,12 @@ nav li::after {
   transition: transform 0.3s ease;
 }
 
-nav li:hover {
+.navigation-link:hover {
   color: #ff3b3b;
   cursor: pointer;
 }
 
-nav li:hover::after {
+.navigation-link:hover::after {
   cursor: pointer;
   transform: scaleX(1);
 }

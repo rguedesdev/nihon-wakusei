@@ -27,6 +27,11 @@ function AnimePageByID() {
         <span>ANIME NEWS</span>
       </div>
 
+      {/* 
+      <div className="animeid-category-label">
+        <span>ANIME NEWS</span>
+      </div> */}
+
       <h1 className="animeid-title">
         {" "}
         Akane-banashi ganha anime para TV em 2026 pelo estúdio ZEXCS
@@ -46,9 +51,10 @@ function AnimePageByID() {
             KON (REINALDO GUEDES)
             <div className="tooltip">
               <p>
-                Me chamo Rafael Alves, conhecido como Rafael Shinzo. Tenho
-                conhecimento em cultura pop japonesa, criei o AnimeNew em 2009
-                com a missão de oferecer cobertura confiável...
+                Me chamo Reinaldo Guedes, mais conhecido como Kon. Curto animes,
+                mangás e cultura pop japonesa desde pequeno. Criei o Nihon
+                WAkusei em 2018 com a missão de oferecer um conteúdo de
+                qualidade para a comunidade.
               </p>
 
               <hr className="hr-faded" />

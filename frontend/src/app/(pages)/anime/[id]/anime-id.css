@@ -27,6 +27,21 @@
   margin-bottom: 15px;
 }
 
+/* .animeid-category-label {
+  background-color: #940000;
+  color: #ffffff;
+  min-width: 100px;
+  width: fit-content;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+} */
+
 .animeid-title {
   font-size: 1.8rem;
   font-weight: bold;
