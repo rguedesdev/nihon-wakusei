@@ -54,3 +54,8 @@ nav ul {
   cursor: pointer;
   transform: scaleX(1);
 }
+
+.navigation-link.active {
+  color: #ff0000; /* destaque do link ativo */
+  font-weight: bold;
+}

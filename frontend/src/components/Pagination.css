@@ -29,3 +29,15 @@
   color: #ffffff;
   cursor: pointer;
 }
+
+.pagination-btn.active {
+  background-color: #940000;
+  color: white;
+  font-weight: bold;
+  border-color: #940000;
+}
+
+.pagination-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

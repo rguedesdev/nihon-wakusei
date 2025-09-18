@@ -1,86 +1,102 @@
-// Imports Principais
+"use client"; // necessário para usar hooks no componente client-side
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // hook para pegar a rota atual
 
-// Style Sheet: CSS
+// Styles e Components
 import "./Navbar.css";
-
-// Components
 import { ThemeToggle } from "./ThemeToggle";
-
-// Static Images
 import Logo from "../../public/logo.jpg";
 
 // Icons
 import { RiHome3Line } from "react-icons/ri";
 import { FiTv } from "react-icons/fi";
-import { BsBook } from "react-icons/bs";
-import { HiOutlineBookOpen } from "react-icons/hi";
 import { TbBook } from "react-icons/tb";
-import { BiDonateHeart } from "react-icons/bi";
-import { RiPagesLine } from "react-icons/ri";
-import { RiMovieAiLine } from "react-icons/ri";
-
+import { MdOutlineLibraryMusic, MdPodcasts } from "react-icons/md";
 import { IoGameControllerOutline } from "react-icons/io5";
-
-import { BiMoviePlay } from "react-icons/bi";
 import { PiFilmSlate } from "react-icons/pi";
 
-import {
-  MdOutlineMusicVideo,
-  MdOutlineLibraryMusic,
-  MdPodcasts,
-} from "react-icons/md";
-
 function Navbar() {
+  const pathname = usePathname();
+
+  // função para verificar se o link está ativo
+  // const isActive = (href: string) => pathname === href;
+  const isActive = (href: string) =>
+    pathname === href || pathname.startsWith(href + "/");
+
   return (
     <nav>
-      <Image className="" src={Logo} alt="Logo" width={70} height={70} />
+      <Image src={Logo} alt="Logo" width={70} height={70} />
       <ul>
         <li>
-          <Link className="navigation-link" href={`/`}>
+          <Link
+            className={`navigation-link ${isActive("/") ? "active" : ""}`}
+            href="/"
+          >
             <RiHome3Line size={20} />
             <span>Home</span>
           </Link>
         </li>
 
         <li>
-          <Link className="navigation-link" href={`/anime`}>
+          <Link
+            className={`navigation-link ${isActive("/anime") ? "active" : ""}`}
+            href="/anime"
+          >
             <FiTv size={20} />
             <span>Anime</span>
           </Link>
         </li>
 
         <li>
-          <Link className="navigation-link" href={`/manga`}>
+          <Link
+            className={`navigation-link ${isActive("/manga") ? "active" : ""}`}
+            href="/manga"
+          >
             <TbBook size={20} />
             <span>Mangá</span>
           </Link>
         </li>
 
         <li>
-          <Link className="navigation-link" href={`/jmusic`}>
+          <Link
+            className={`navigation-link ${isActive("/jmusic") ? "active" : ""}`}
+            href="/jmusic"
+          >
             <MdOutlineLibraryMusic size={20} />
             <span>J-Music</span>
           </Link>
         </li>
 
         <li>
-          <Link className="navigation-link" href={`/game`}>
+          <Link
+            className={`navigation-link ${isActive("/game") ? "active" : ""}`}
+            href="/game"
+          >
             <IoGameControllerOutline size={20} />
             <span>Game</span>
           </Link>
         </li>
 
         <li>
-          <Link className="navigation-link" href={`/live-action`}>
+          <Link
+            className={`navigation-link ${
+              isActive("/live-action") ? "active" : ""
+            }`}
+            href="/live-action"
+          >
             <PiFilmSlate size={20} />
             <span>Live Action</span>
           </Link>
         </li>
 
         <li>
-          <Link className="navigation-link" href={`/podcast`}>
+          <Link
+            className={`navigation-link ${
+              isActive("/podcast") ? "active" : ""
+            }`}
+            href="/podcast"
+          >
             <MdPodcasts size={20} />
             <span>Podcast</span>
           </Link>
