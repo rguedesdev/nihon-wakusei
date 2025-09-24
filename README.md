@@ -38,7 +38,7 @@ Este projeto foi construído para o meu portifólio pessoal, com o intuito de ex
 - [Next.js](https://www.python.org/): Framework React
 - Outras: os, sys, webbrowser, urllib.request, json, datetime, requests -->
 
-## Table of Contents
+## Tabela de Conteúdos
 
 - [Installation](#installation)
 - [Configuration](#configuration)
@@ -84,6 +84,20 @@ npm run dev
 yarn dev
 ```
 
-## Estudos:
+## 🚀 Live Demo
 
-Na pasta `estudos` você escontra alguns códigos simples, que eu utilizei para aprender sobre as ferramentas, inclusive utilizando outras como [espeak](https://espeak.sourceforge.net/) e [pyttsx3](https://pypi.org/project/pyttsx3/)
+[👉 Acesse aqui](https://meuprojeto.vercel.app)
+
+## 🚀 Live Demo
+
+🔗 [Clique aqui para ver a aplicação rodando](https://meuprojeto.vercel.app)
+
+[![Live Demo](https://img.shields.io/badge/demo-online-green?style=for-the-badge)](https://meuprojeto.vercel.app)
+
+## 🎥 Demo Preview
+
+![Demo](https://mir-s3-cdn-cf.behance.net/project_modules/1400/b814fc122808011.60e1f6ca23bac.gif)
+
+## 🚀 Live Demo
+
+[👉 Acesse no GitHub Pages](https://usuario.github.io/repositorio/)
