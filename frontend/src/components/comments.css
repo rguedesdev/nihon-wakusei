@@ -1,21 +1,35 @@
+/* comments.css */
+
+/* Container principal dos comentários */
 .comments-container {
   display: flex;
   flex-direction: column;
+  width: 100%; /* [ALTERAÇÃO] Garante que ocupe toda a largura disponível */
+  box-sizing: border-box; /* [ALTERAÇÃO] Inclui padding e border na largura total */
 }
 
+/* Título da seção de comentários */
 .comment-title {
   margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #aa1818;
 }
 
+/* Área de texto para escrever comentário */
 .comment-textarea {
   width: 100%;
+  min-width: 1140px;
   border: 2px solid #940000;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
   outline: none;
+  resize: vertical; /* [ALTERAÇÃO] Permite redimensionamento vertical sem quebrar layout */
+  box-sizing: border-box; /* [ALTERAÇÃO] Evita overflow causado pelo padding */
 }
 
+/* Botão de enviar comentário */
 .comment-submit-button {
   width: 250px;
   height: 50px;
@@ -23,72 +37,120 @@
   border-radius: 5px;
   color: #ffffff;
   transition: all 0.3s ease;
-
   margin-bottom: 40px;
+  cursor: pointer;
+
+  /* alinhamento para o texto + spinner ficarem centralizados */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .comment-submit-button:hover {
   background-color: #a51313;
-  cursor: pointer;
 }
 
 .comment-submit-button:active {
-  zoom: 0.97;
+  transform: scale(0.97);
 }
 
+/* 🔽 ESTADO DE LOADING */
+.comment-submit-button.loading {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* 🔽 SPINNER — é aqui que ele aparece */
+.comment-submit-button.loading::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  /* margin-left: 10px; espaço entre o texto e o spinner */
+  border: 2px solid #ffffff;
+  border-top-color: transparent; /* deixa uma parte transparente para dar efeito */
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+/* 🔽 animação do spinner */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Lista de comentários */
 .comments-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 100%; /* [ALTERAÇÃO] Evita colapso de largura dentro do flex container */
+  box-sizing: border-box; /* [ALTERAÇÃO] Inclui padding/border na largura total */
 }
 
+/* Cada comentário individual */
 .comment-item {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  align-items: flex-start; /* [ALTERAÇÃO] Mantém alinhamento correto do avatar e conteúdo */
+  flex-wrap: wrap; /* [ALTERAÇÃO] Evita que quebre layout em telas pequenas */
 }
 
+/* Avatar do usuário */
 .comment-avatar {
   width: 60px;
   height: 60px;
   border-radius: 10px;
+  flex-shrink: 0; /* [ALTERAÇÃO] Garante que o avatar não encolha */
+  object-fit: cover; /* [ALTERAÇÃO] Mantém proporção da imagem */
 }
 
+/* Conteúdo do comentário */
 .comment-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex: 1; /* [ALTERAÇÃO] Faz o conteúdo ocupar o resto do espaço disponível */
+  min-width: 0; /* [ALTERAÇÃO] Evita overflow em flexbox */
+  margin-bottom: 20px;
 }
 
+/* Nome do autor do comentário */
 .comment-author {
   font-size: 16px;
   font-weight: bold;
   color: #aa1818;
+  margin: 0;
 }
 
+/* Texto do comentário */
 .comment-text {
   font-size: 14px;
-  color: var(--text-color);
+  color: var(--text-color, #333);
+  margin: 0;
+  word-break: break-word; /* [ALTERAÇÃO] Evita que textos longos quebrem o layout */
 }
 
+/* Ações do comentário (like, share, responder) */
 .comment-actions {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap; /* [ALTERAÇÃO] Mantém ações visíveis em telas menores */
 }
 
+/* Cada botão de ação */
 .comment-btn-action {
   display: flex;
   flex-direction: row;
   gap: 5px;
   align-items: center;
   cursor: pointer;
-
-  transition: all 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .comment-btn-action:hover {
   color: #aa1818;
-  cursor: pointer;
 }

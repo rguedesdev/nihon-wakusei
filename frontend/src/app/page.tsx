@@ -1,71 +1,24 @@
-import Image from "next/image";
-
-// Style Sheet CSS
-import "./Home.css";
+// Axios
+import api from "@/utils/api";
 
 // Components
 import { NewsCard } from "@/components/NewsCard";
 import { Pagination } from "@/components/Pagination";
 
-// Static Images
-import AkaneBanashi from "../../public/akanebanashi.jpg";
+async function Home() {
+  let posts = [];
+  try {
+    const response = await api.get("/posts/");
+    posts = response.data;
+  } catch (err) {
+    console.error("Erro ao buscar posts:", err);
+  }
 
-// Icons
-import { IoCalendarOutline } from "react-icons/io5";
-import { RxPencil2 } from "react-icons/rx";
-import { MdOutlinePersonOutline } from "react-icons/md";
-
-function Home() {
   return (
     <div>
-      {/* <main className="main-homepage">
-        <div className="banner-wrapper">
-          <Image
-            className="banner-image"
-            src={AkaneBanasho}
-            alt="Anime Banner"
-            width={500}
-            height={268}
-          />
-          <div className="banner-label">
-            <span>ANIME NEWS</span>
-          </div>
-        </div>
-
-        <div>
-          <h1 className="title-main">
-            Akane-banashi receberá adaptação em anime!
-          </h1>
-          <p className="text-main">
-            A direção do anime de Akane-banashi ficará a cargo de Ayumu
-            Watanabe, conhecido por trabalhos como Kaijuu no Kodomo e Gyokou no
-            Nikuko-chan. A produção será do estúdio ZEXCS. Yu Harima, que já
-            atuou como diretor de episódios em Summer Time Rendering e Tokyo
-            Revengers, será o diretor assistente. Já Kii Tanaka cuidará do
-            design de personagens e também atuará como diretor-chefe de
-            animação. Michihiro Tsuchiya, roteirista de séries como PriPara e
-            Cross Game, ficará responsável pelos roteiros, enquanto Akio Izutsu
-            compõe a trilha sonora. O especialista Kikuhiko Hayashiya atuará
-            como supervisor de rakugo, garantindo fidelidade à arte tradicional
-            retratada.
-          </p>
-          <div className="icons-main">
-            <span className="date-icon">
-              <IoCalendarOutline size={20} />
-              <p>10 de Agosto de 2025</p>
-            </span>
-            <span className="date-icon">
-              <MdOutlinePersonOutline size={22} />
-              <p>Reinaldo Guedes</p>
-            </span>
-          </div>
-        </div>
-      </main> */}
-
       <main>
-        <NewsCard />
+        <NewsCard news={posts} />
       </main>
-
       <Pagination />
     </div>
   );
