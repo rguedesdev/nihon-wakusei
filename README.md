@@ -1,18 +1,22 @@
 # Nihon Wakusei - Site de Notícias
 
 ![Docker](https://img.shields.io/badge/docker-066da5?style=for-the-badge&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-%23FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Deno](https://img.shields.io/badge/Deno-ffffff?style=for-the-badge&logo=deno&logoColor=black)
 ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 ![Fastify](https://img.shields.io/badge/Fastify-000000?style=for-the-badge&logo=fastify&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=css&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-Este é um site de notícias de anime, mangás, games e cultura pop japonesa em geral.
+Este projeto é um site de notícias de animes, mangás, games e cultura pop japonesa. Foi construído usando JavaScript, TypeScript, Deno, MongoDB como banco de dados JWT para controle de autenticação.
 
-## Features:
+Este projeto foi construído para o meu portifólio pessoal, com o intuito de explorar minhas habilidades.
+
+<!-- ## Features:
 
 - **⌚ Horário atual:** "Que horas são?"<br>
 - **🔎 Pesquisa no Google:** "Pesquisar objeto no Google"<br>
@@ -32,57 +36,53 @@ Este é um site de notícias de anime, mangás, games e cultura pop japonesa em 
 
 - [Deno](https://www.python.org/): Runtime Javascript
 - [Next.js](https://www.python.org/): Framework React
-- Outras: os, sys, webbrowser, urllib.request, json, datetime, requests
+- Outras: os, sys, webbrowser, urllib.request, json, datetime, requests -->
 
-## Como executar:
+## Table of Contents
 
-### **1. Instale `Deno` na sua máquina, por meio [deste link](https://www.python.org/)**
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Authentication](#authentication)
+- [Database](#database)
+- [Contributing](#contributing)
 
-### **2. Faça um clone [desse repositório](https://github.com/rafaballerini/AssistentePessoal.git) na sua máquina:**
+## Instalação/Como Executar
 
-- Crie uma pasta no seu computador para esse programa, recomendo colocar o nome **Assistente Pessoal**
-- Abra o `git bash` ou `terminal` dentro dessa pasta
-- Copie a [URL](https://github.com/rafaballerini/AssistentePessoal.git) do repositório
-- Digite `git clone <URL copiada>` e pressione `enter`
+### 1. Instale o Docker em sua máquina
 
-### **3. Instale as bibliotecas necessárias pelo terminal, dentro dessa pasta criada:**
+- Verifique como instalar em seu sistema operacional, por meio [deste link](https://docs.docker.com/get-started/)
 
-- gTTS: `pip install gTTS`
-- playsound: `pip install playsound`
-- beautiful soup 4: `pip install beautifulsoup4`
-- speech recognition: `pip install SpeechRecognition`
-- translate: `pip install translate`
-  caso apareça algum erro referente a alguma das bibliotecas importadas no programa, jogue o nome dela no Google e faça a instalação e passo a passo necessários
+### 2. Instale o Deno globalmente em sua máquina
 
-### **4. Baixe a ferramenta de lembretes:**
+- Verifique como instalar em seu sistema operacional, por meio [deste link](https://docs.deno.com/runtime/getting_started/installation/)
 
-- Acesse o [Notezilla](https://www.conceptworld.com/Notezilla) e faça o download
-- Utilize o caminho `C:\Program Files\Conceptworld\Notezilla` para instalação
+- Não é necessário instalar nenhum pacote no Deno, basta instalar globalmente e depois rodar o projeto.
 
-### **5. Crie sua chave para as APIs:**
+### 3. Clone o repositório:
 
-**API de filmes:**
+```bash
+git clone https://github.com/rguedesdev/nihon-wakusei.git
+```
 
-- Acesse o [The Movie DataBase](https://www.themoviedb.org/) e faça seu cadastro
-- Em configurações, acesse API e crie uma nova chave
-- Copie a chave e cole no `token` da função `filmes()`, substituindo a frase `<suachaveapi>`
+- Já vem organizando em um diretório principal que representa o projeto geral, e dentro tem dois diretório que representam o Backend e o Frontend.
 
-**API de clima:**
+### Executando o projeto:
 
-- Acesse o [Open Wheather Map](https://openweathermap.org/) e faça seu cadastro
-- Confirme o email recebido e em configurações, acesse suas API Keys
-- Copie a chave e cole no `token` da função `clima()`, substituindo a frase `<suachaveapi>`
+- Acesse o terminal integrado do Backend e execute-o:
 
-### **6. Preencha os caminhos dos programas na sua máquina:**
+```bash
+deno task dev
+```
 
-- Pesquise os caminhos dos seguintes programas executáveis na sua máquina: Google Chrome, Visual Studio, Visual Studio Code, Discord e Notion
-- Abaixo do comentário `abrir programas do computador`, cole o respectivo caminho em cada chamada de função
-- Exemplo: `os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")`
-- Caso queira adicionar ou deletar algum programa, faça isso utilizando o padrão do código
+- Acesse o terminal integrado do Frontend e execute-o, de acordo com seu gerenciador de pacotes:
 
-### **7. Execute o programa pelo terminal:**
-
-- Digite `python assistente.py`
+```bash
+npm run dev
+# ou
+yarn dev
+```
 
 ## Estudos:
 
