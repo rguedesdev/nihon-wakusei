@@ -1,6 +1,16 @@
 # Nihon Wakusei - Site de Notícias
 
-Fala pessoal, essa é a Ana, uma assistente pessoal virtual que escuta os seus comandos de voz e executa-os!
+![Docker](https://img.shields.io/badge/docker-066da5?style=for-the-badge&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Deno](https://img.shields.io/badge/Deno-121417?style=for-the-badge&logo=deno&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-121417?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![Fastify](https://img.shields.io/badge/Fastify-121417?style=for-the-badge&logo=fastify&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white)
+
+Este é um site de notícias de anime, mangás, games e cultura pop japonesa em geral.
 
 ## Features:
 

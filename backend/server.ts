@@ -1,8 +1,8 @@
 // server.ts
 import Fastify from "fastify";
-import multipart from "npm:@fastify/multipart"; // parser obrigatório
+import multipart from "fastifyMultipart";
+import fastifyStatic from "fastifyStatic";
 import Cors from "cors"; // usar plugin npm
-import fastifyStatic from "npm:@fastify/static";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
