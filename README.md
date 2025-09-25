@@ -12,9 +12,42 @@
 ![CSS](https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=css&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-Este projeto é um site de notícias de animes, mangás, games e cultura pop japonesa. Foi construído usando JavaScript, TypeScript, Deno, MongoDB como banco de dados e JWT para controle de autenticação.
+<!-- Este projeto é um site de notícias de animes, mangás, games e cultura pop japonesa. O backend foi construído usando Deno como runtime, TypeScript/JavaScript, Fastify como framework, além do JWT para controle de autenticação. Utilizei o MongoDB como banco de dados e o Mongoose como framework. Já o Frontend foi desenvolvido utilizando Next.js com TypeScript integrado e CSS puro para estilização. Todo o projeto foi conteinizado com Docker, e orquestrado com Docker compose. O projeto foi hospedado na AWS, onde utilizei o potencial da plataforma para subir para produção.
 
-Desenvolvi este projeto para o meu portifólio pessoal, com o intuito de explorar e melhorar minhas habilidades.
+Desenvolvi este projeto para o meu portifólio pessoal, com o intuito de explorar e melhorar minhas habilidades. -->
+
+# 📌 Descrição do projeto
+
+Este projeto é um site de notícias focado em **animes, mangás, games e cultura pop japonesa**.
+
+---
+
+## 🛠 Tecnologias utilizadas
+
+### 🔹 Backend
+
+- [Deno](https://deno.land/) (runtime)
+- [Fastify](https://fastify.dev/) (framework)
+- TypeScript
+- JWT (autenticação)
+- MongoDB com [Mongoose](https://mongoosejs.com/) (ORM)
+
+### 🔹 Frontend
+
+- [Next.js](https://nextjs.org/) com TypeScript
+- CSS nativo
+
+### 🔹 Infraestrutura
+
+- Docker (containerização)
+- Docker Compose (orquestração)
+- AWS (deploy em produção)
+
+---
+
+## 🎯 Objetivo
+
+Desenvolvido para compor meu portfólio, este projeto teve como propósito **aplicar boas práticas modernas de desenvolvimento web**, reforçar minhas habilidades técnicas e **aprofundar conhecimentos em arquitetura, deploy e escalabilidade**.
 
 <!-- ## Features:
 
@@ -40,13 +73,11 @@ Desenvolvi este projeto para o meu portifólio pessoal, com o intuito de explora
 
 ## Tabela de Conteúdos
 
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Authentication](#authentication)
+- [Instalação/Como Executar](#instalaçãocomo-executar)
+
 - [Database](#database)
-- [Contributing](#contributing)
+
+- [Live Demo](#-live-demo)
 
 ## Instalação/Como Executar
 
@@ -101,3 +132,7 @@ yarn dev
 ## 🚀 Live Demo
 
 [👉 Acesse no GitHub Pages](https://usuario.github.io/repositorio/)
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
