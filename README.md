@@ -12,9 +12,9 @@
 ![CSS](https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=css&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-Este projeto é um site de notícias de animes, mangás, games e cultura pop japonesa. Foi construído usando JavaScript, TypeScript, Deno, MongoDB como banco de dados JWT para controle de autenticação.
+Este projeto é um site de notícias de animes, mangás, games e cultura pop japonesa. Foi construído usando JavaScript, TypeScript, Deno, MongoDB como banco de dados e JWT para controle de autenticação.
 
-Este projeto foi construído para o meu portifólio pessoal, com o intuito de explorar minhas habilidades.
+Desenvolvi este projeto para o meu portifólio pessoal, com o intuito de explorar e melhorar minhas habilidades.
 
 <!-- ## Features:
 

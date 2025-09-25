@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nihon Wakusei - Site de Notícias
 
-## Getting Started
+![Docker](https://img.shields.io/badge/docker-066da5?style=for-the-badge&logo=docker&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Deno](https://img.shields.io/badge/Deno-ffffff?style=for-the-badge&logo=deno&logoColor=black)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![Fastify](https://img.shields.io/badge/Fastify-000000?style=for-the-badge&logo=fastify&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=css&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-First, run the development server:
+<!-- Este projeto é um site de notícias de animes, mangás, games e cultura pop japonesa. O backend foi construído usando Deno como runtime, TypeScript/JavaScript, Fastify como framework, além do JWT para controle de autenticação. Utilizei o MongoDB como banco de dados e o Mongoose como framework. Já o Frontend foi desenvolvido utilizando Next.js com TypeScript integrado e CSS puro para estilização. Todo o projeto foi conteinizado com Docker, e orquestrado com Docker compose. O projeto foi hospedado na AWS, onde utilizei o potencial da plataforma para subir para produção.
+
+Desenvolvi este projeto para o meu portifólio pessoal, com o intuito de explorar e melhorar minhas habilidades. -->
+
+# 📌 Descrição do projeto
+
+Este projeto é um site de notícias focado em **animes, mangás, games e cultura pop japonesa**.
+
+---
+
+## 🛠 Tecnologias utilizadas
+
+### 🔹 Backend
+
+- [Deno](https://deno.land/) (runtime)
+- [Fastify](https://fastify.dev/) (framework)
+- TypeScript
+- JWT (autenticação)
+- MongoDB com [Mongoose](https://mongoosejs.com/) (ORM)
+
+### 🔹 Frontend
+
+- [Next.js](https://nextjs.org/) com TypeScript
+- CSS nativo
+
+### 🔹 Infraestrutura
+
+- Docker (containerização)
+- Docker Compose (orquestração)
+- AWS (deploy em produção)
+
+---
+
+## 🎯 Objetivo
+
+Desenvolvido para compor meu portfólio, este projeto teve como propósito **aplicar boas práticas modernas de desenvolvimento web**, reforçar minhas habilidades técnicas e **aprofundar conhecimentos em arquitetura, deploy e escalabilidade**.
+
+<!-- ## Features:
+
+- **⌚ Horário atual:** "Que horas são?"<br>
+- **🔎 Pesquisa no Google:** "Pesquisar objeto no Google"<br>
+- **🪙 Cotação de dólar, euro e bitcoin:** "Qual a cotação do dólar no momento?"<br>
+- **📰 Últimas 5 notícias do momento:** "Quais as últimas notícias?"<br>
+- **📽️ 5 filmes mais populares do momento:** "Quais os filmes mais populares no momento?"<br>
+- **🎧 Abrir a melhor música, banda e álbum do mundo no Spotify:** "Qual a melhor música do mundo?"<br>
+- **⛅ Clima/tempo:** "Clima em São Paulo"<br>
+- **🔃 Tradutor para inglês e português:** "Traduzir para o inglês"<br>
+- **📒 Criar e visualizar lembretes:** "Criar novo lembrete" ou "Visualizar lembretes"<br>
+- **💻 Abrir programar na sua máquina:** "Abrir Discord"<br>
+- **💤 Desligar computador em 1 hora ou meia hora:** "Desligar computador em uma hora"<br>
+- **❌ Cancelar desligamento do computador:** "Cancelar desligamento"<br>
+- **🙋🏽‍♀️ Fechar a assistente:** "Fechar assistente"
+
+## Tecnologias utilizadas:
+
+- [Deno](https://www.python.org/): Runtime Javascript
+- [Next.js](https://www.python.org/): Framework React
+- Outras: os, sys, webbrowser, urllib.request, json, datetime, requests -->
+
+## Tabela de Conteúdos
+
+- [Instalação/Como Executar](#instalaçãocomo-executar)
+
+- [Database](#database)
+
+- [Live Demo](#-live-demo)
+
+## Instalação/Como Executar
+
+### 1. Instale o Docker em sua máquina
+
+- Verifique como instalar em seu sistema operacional, por meio [deste link](https://docs.docker.com/get-started/)
+
+### 2. Instale o Deno globalmente em sua máquina
+
+- Verifique como instalar em seu sistema operacional, por meio [deste link](https://docs.deno.com/runtime/getting_started/installation/)
+
+- Não é necessário instalar nenhum pacote no Deno, basta instalar globalmente e depois rodar o projeto.
+
+### 3. Clone o repositório:
+
+```bash
+git clone https://github.com/rguedesdev/nihon-wakusei.git
+```
+
+- Já vem organizando em um diretório principal que representa o projeto geral, e dentro tem dois diretório que representam o Backend e o Frontend.
+
+### Executando o projeto:
+
+- Acesse o terminal integrado do Backend e execute-o:
+
+```bash
+deno task dev
+```
+
+- Acesse o terminal integrado do Frontend e execute-o, de acordo com seu gerenciador de pacotes:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[👉 Acesse aqui](https://meuprojeto.vercel.app)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Live Demo
 
-## Learn More
+🔗 [Clique aqui para ver a aplicação rodando](https://meuprojeto.vercel.app)
 
-To learn more about Next.js, take a look at the following resources:
+[![Live Demo](https://img.shields.io/badge/demo-online-green?style=for-the-badge)](https://meuprojeto.vercel.app)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎥 Demo Preview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![Demo](https://mir-s3-cdn-cf.behance.net/project_modules/1400/b814fc122808011.60e1f6ca23bac.gif)
 
-## Deploy on Vercel
+## 🚀 Live Demo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[👉 Acesse no GitHub Pages](https://usuario.github.io/repositorio/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
