@@ -5,6 +5,7 @@ import fastifyStatic from "fastifyStatic";
 import Cors from "cors"; // usar plugin npm
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import "dotenv";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -34,7 +35,12 @@ app.register(UserRoutes, { prefix: "/users" });
 app.register(PostRoutes, { prefix: "/posts" });
 
 // Configuração da porta
-const port = 5000;
+const port = Number(
+  Deno.env.get("PORT") ??
+    (() => {
+      throw new Error("A variável PORT não está definida");
+    })()
+);
 
 console.log(`Servidor rodando em http://localhost:${port}`);
 await app.listen({ port });

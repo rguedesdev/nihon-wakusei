@@ -22,11 +22,12 @@ Este projeto é um site de notícias focado em **animes, mangás, games e cultur
 
 ### 🔹 Backend
 
-- [Deno](https://deno.land/) (runtime)
-- [Fastify](https://fastify.dev/) (framework)
-- TypeScript
-- JWT (autenticação)
-- MongoDB com [Mongoose](https://mongoosejs.com/) (ORM)
+- [Deno](https://deno.land/) (Runtime)
+- [Fastify](https://fastify.dev/) (Framework)
+- TypeScript/JavaScript
+- JWT (Autenticação)
+- [MongoDB](https://www.mongodb.com/) (Banco de Dados NoSql)
+- [Mongoose](https://mongoosejs.com/) (ORM)
 
 ### 🔹 Frontend
 
@@ -38,6 +39,10 @@ Este projeto é um site de notícias focado em **animes, mangás, games e cultur
 - Docker (containerização)
 - Docker Compose (gerenciamento de múltiplos containers em um único host)
 - AWS (deploy em produção)
+
+### 🔹 CI/CD
+
+- [GitHub Actions](https://github.com/features/actions): Automatiza build, testes e deploy do projeto.
 
 ## 🎯 Objetivo
 
@@ -65,15 +70,13 @@ Desenvolvido para compor meu portfólio, este projeto teve como propósito **apl
 - [Next.js](https://www.python.org/): Framework React
 - Outras: os, sys, webbrowser, urllib.request, json, datetime, requests -->
 
-## Tabela de Conteúdos
+<!-- ## Tabela de Conteúdos
 
 - [Instalação/Como Executar](#instalaçãocomo-executar)
-
 - [Database](#database)
+- [Live Demo](#-live-demo) -->
 
-- [Live Demo](#-live-demo)
-
-## Instalação/Como Executar
+## Instalação
 
 ### 1. Instale o Docker em sua máquina
 
@@ -87,17 +90,43 @@ Desenvolvido para compor meu portfólio, este projeto teve como propósito **apl
 
 - Não é necessário instalar nenhum pacote no Deno, basta instalar globalmente e depois rodar o projeto.
 
-### 3. Configure o banco de dados MongoDB
+### 3. Instalando as dependências
+
+- **Backend (Deno)**: Não é necessário instalar pacotes, apenas instale o runtime do Deno no seu sistema. Depois, você pode rodar o projeto normalmente.
+
+- **Frontend**: Instale as dependências do projeto com seu gerenciador de pacotes:
+
+```bash
+# usando npm
+npm install
+
+# usando yarn
+yarn
+```
+
+### 4. Configure o banco de dados MongoDB
 
 - Crie uma conta gratuitamente no MongoDB.
 
 - Crie um Cluster, configure um usuário e uma senha, copie o link de conexão.
 
-### 4. Configure o .env do Backend e do Frontend
+### 5. Configure o .env do Backend e do Frontend
 
-- Crie um arquivo .env dentro do diretório Backend e insira
+- Crie um arquivo .env dentro do diretório Backend e insira:
 
-### 5. Clone o repositório:
+```bash
+NIHON_WAKUSEI_DB=<LINK DE CONEXÃO>
+JWT_SECRET=<SECRET KEY>
+FRONTEND_URL=<PORTA 3000 PARA DESENVOLVIMENTO>
+```
+
+- Crie um arquivo .env dentro do diretório Frontend e insira:
+
+```bash
+NEXT_PUBLIC_BACKEND_URL=<PORTA 5000 PARA DESENVOLVIMENTO>
+```
+
+### 6. Clone o repositório:
 
 ```bash
 git clone https://github.com/rguedesdev/nihon-wakusei.git
@@ -129,21 +158,11 @@ docker compose up --build -d
 
 ## 🚀 Live Demo
 
-[👉 Acesse aqui](https://meuprojeto.vercel.app)
-
-## 🚀 Live Demo
-
 🔗 [Clique aqui para ver a aplicação rodando](https://meuprojeto.vercel.app)
-
-[![Live Demo](https://img.shields.io/badge/demo-online-green?style=for-the-badge)](https://meuprojeto.vercel.app)
 
 ## 🎥 Demo Preview
 
 ![Demo](https://mir-s3-cdn-cf.behance.net/project_modules/1400/b814fc122808011.60e1f6ca23bac.gif)
-
-## 🚀 Live Demo
-
-[👉 Acesse no GitHub Pages](https://usuario.github.io/repositorio/)
 
 ## 📄 Licença
 
