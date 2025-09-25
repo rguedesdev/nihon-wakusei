@@ -16,13 +16,9 @@
 
 Desenvolvi este projeto para o meu portifólio pessoal, com o intuito de explorar e melhorar minhas habilidades. -->
 
-# 📌 Descrição do projeto
-
 Este projeto é um site de notícias focado em **animes, mangás, games e cultura pop japonesa**.
 
----
-
-## 🛠 Tecnologias utilizadas
+## 💻 Tecnologias utilizadas
 
 ### 🔹 Backend
 
@@ -40,10 +36,8 @@ Este projeto é um site de notícias focado em **animes, mangás, games e cultur
 ### 🔹 Infraestrutura
 
 - Docker (containerização)
-- Docker Compose (orquestração)
+- Docker Compose (gerenciamento de múltiplos containers em um único host)
 - AWS (deploy em produção)
-
----
 
 ## 🎯 Objetivo
 
@@ -83,15 +77,27 @@ Desenvolvido para compor meu portfólio, este projeto teve como propósito **apl
 
 ### 1. Instale o Docker em sua máquina
 
-- Verifique como instalar em seu sistema operacional, por meio [deste link](https://docs.docker.com/get-started/)
+- Verifique como instalar em seu sistema operacional, por meio [deste link](https://docs.docker.com/get-started/).
+
+- Instale o Docker Compose globalmente.
 
 ### 2. Instale o Deno globalmente em sua máquina
 
-- Verifique como instalar em seu sistema operacional, por meio [deste link](https://docs.deno.com/runtime/getting_started/installation/)
+- Verifique como instalar em seu sistema operacional, por meio [deste link](https://docs.deno.com/runtime/getting_started/installation/).
 
 - Não é necessário instalar nenhum pacote no Deno, basta instalar globalmente e depois rodar o projeto.
 
-### 3. Clone o repositório:
+### 3. Configure o banco de dados MongoDB
+
+- Crie uma conta gratuitamente no MongoDB.
+
+- Crie um Cluster, configure um usuário e uma senha, copie o link de conexão.
+
+### 4. Configure o .env do Backend e do Frontend
+
+- Crie um arquivo .env dentro do diretório Backend e insira
+
+### 5. Clone o repositório:
 
 ```bash
 git clone https://github.com/rguedesdev/nihon-wakusei.git
@@ -99,20 +105,26 @@ git clone https://github.com/rguedesdev/nihon-wakusei.git
 
 - Já vem organizando em um diretório principal que representa o projeto geral, e dentro tem dois diretório que representam o Backend e o Frontend.
 
-### Executando o projeto:
+## Executando o projeto:
 
-- Acesse o terminal integrado do Backend e execute-o:
+- No terminal, dentro do diretório principal do projeto, construa as imagens com:
 
 ```bash
-deno task dev
+docker compose build
 ```
 
-- Acesse o terminal integrado do Frontend e execute-o, de acordo com seu gerenciador de pacotes:
+- Após a construção da images execute o projeto com o seguinte comando:
 
 ```bash
-npm run dev
-# ou
-yarn dev
+docker compose up
+# ou em modo detached (em segundo plano):
+docker compose up -d
+```
+
+- Também é possível combinar ambos os passos em um único comando:
+
+```bash
+docker compose up --build -d
 ```
 
 ## 🚀 Live Demo
