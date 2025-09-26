@@ -43,4 +43,4 @@ const port = Number(
 );
 
 console.log(`Servidor rodando em http://localhost:${port}`);
-await app.listen({ port });
+await app.listen({ port, host: "0.0.0.0" });

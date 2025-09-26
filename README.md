@@ -29,12 +29,15 @@ Desenvolvido para compor meu portfólio, este projeto teve como propósito **apl
 - Upload de imagens via multipart/form-data
 - Integração com MongoDB para persistência de dados
 - Deploy automatizado na AWS
+- Tema Claro/Escuro
 
 ### 🔜 Em desenvolvimento
 
 - Cadastro e login de usuários (Frontend)
 - Sistema de comentários nas postagens (Melhorias)
 - Likes e compartilhamentos
+- Sistema de busca de posts
+- Páginação
 - Dashboard (Painel administrativo)
 - Testes automatizados (CI/CD mais completo)
 
