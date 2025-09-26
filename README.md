@@ -11,6 +11,7 @@
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=css&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-141f2e?style=for-the-badge&logo=amazonaws&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
 Este projeto é um site de notícias focado em **animes, mangás, games e cultura pop japonesa**.
 
@@ -23,7 +24,7 @@ Desenvolvido para compor meu portfólio, este projeto teve como propósito **apl
 ### ✅ Implementadas
 
 - Autenticação com JWT
-- Cadastro e login de usuários
+- Cadastro e login de usuários (Backend)
 - CRUD de postagens (criar, listar, editar, deletar)
 - Upload de imagens via multipart/form-data
 - Integração com MongoDB para persistência de dados
@@ -31,10 +32,10 @@ Desenvolvido para compor meu portfólio, este projeto teve como propósito **apl
 
 ### 🔜 Em desenvolvimento
 
-- Sistema de comentários nas postagens
+- Cadastro e login de usuários (Frontend)
+- Sistema de comentários nas postagens (Melhorias)
 - Likes e compartilhamentos
-- Painel administrativo
-- Integração com APIs externas de animes e mangás
+- Dashboard (Painel administrativo)
 - Testes automatizados (CI/CD mais completo)
 
 ## 💻 Tecnologias utilizadas
