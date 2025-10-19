@@ -1,5 +1,4 @@
 import { FastifyReply } from "fastify";
-import "dotenv";
 import jwt from "jsonwebtoken";
 import mongoose from "mongoose";
 
