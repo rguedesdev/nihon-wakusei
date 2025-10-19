@@ -155,6 +155,20 @@ docker compose up --build -d
 
 ![Demo](https://mir-s3-cdn-cf.behance.net/project_modules/1400/b814fc122808011.60e1f6ca23bac.gif)
 
+## <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/image.svg" width="22" /> Prints do Projeto
+
+### 🔹 Página Inicial
+
+![Home](https://i.imgur.com/seuArquivo.png)
+
+### 🔹 Dashboard
+
+![Dashboard](./assets/dashboard.png)
+
+### 🔹 Tema Escuro
+
+![Dark Mode](./assets/dark-mode.png)
+
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
